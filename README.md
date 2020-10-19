@@ -15,3 +15,13 @@ When the user is then removed from the top level members list, all inherited per
 permissions assigned explicitly will be persisted.
 
 There is no easy way to view all these permissions in Gitlab....
+
+## Running Locally
+
+I don't bother building the go binary. Just:
+
+* `git clone`
+* `go get`
+* `go run main.go`
+
+`go run main.go --gid <gitlab group id> --gitlabToken <your gitlab api token> --excludedUsers <optional list of users to ignore if required>`
